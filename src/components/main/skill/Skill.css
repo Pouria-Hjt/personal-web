@@ -1,0 +1,40 @@
+.skill {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    height: 60rem;
+    position: relative;
+
+}
+.skill__box {
+    width: 60%;
+    height: 50rem;
+    padding: 3rem;
+    background-color: var(--boxcolor);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 7rem;
+    border-radius: 2.5rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+@media screen and (max-width: 900px) {
+    .skill__box {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .skill__box {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .skill__box {
+        width: 98%;
+    }
+}

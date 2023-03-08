@@ -1,0 +1,44 @@
+.socialbox {
+    width: 25rem;
+    height: 25rem;
+    background: var(--boxcolor);
+    display: grid;
+    place-items: center;
+    color: var(--color);
+    border-radius: 5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    margin-top: 2rem;
+}
+.social__icon {
+    font-size: 13rem;
+    transition: all .4s;
+    z-index: 10;
+}
+.socialbox::before {
+    content: "";
+    width: 34rem;
+    height: 34rem;
+    position: absolute;
+    left: -35rem; 
+    bottom: -35rem;
+    background-color: var(--color);
+    transform: rotate(45deg);
+    transition: all .4s;
+    z-index: -1;
+}
+.socialbox:hover .social__icon {
+    font-size: 18rem;
+    color: var(--text);
+}
+.socialbox:hover::before {
+    left: -5rem;
+    bottom: -5rem;
+}
+@media screen and (max-width: 600px) {
+    .socialbox {
+        width: 20rem;
+        height: 20rem;
+    }
+}

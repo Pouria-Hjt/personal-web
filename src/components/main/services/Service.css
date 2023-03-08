@@ -1,0 +1,14 @@
+.service {
+    width: 100%;
+    margin-bottom: 3rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.service__card-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-top: 5rem;
+}

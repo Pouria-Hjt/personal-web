@@ -1,0 +1,32 @@
+.card {
+    width: 25rem;
+    height: 25rem;
+    background-color: var(--boxcolor);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 2rem;
+    transition: all .3s ;
+    margin-top: 2rem;
+}
+.card__image {
+    height: 13.5rem;
+}
+
+.card__title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: var(--text);
+}
+.card__status {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--text);
+}
+.card:hover {
+    transform: translateY(-1rem) translateX(-1rem);
+    box-shadow: 1rem 1rem 1rem black;
+}

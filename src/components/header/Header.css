@@ -1,0 +1,40 @@
+.header {
+    width: 100%;
+    height: 8rem;
+    background-color: var(--boxcolor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+.header__logo {
+    font-size: 3.5rem;
+    color: var(--text);
+    position: relative;
+    letter-spacing: .1rem;
+}
+.header__logo::after {
+    content: "";
+    width: calc(100% + 2rem);
+    height: 2rem;
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0;
+    border-radius: 3rem 15rem 2rem 10rem;
+    background-image: url(../../../public/img/underline.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heaedr__theme {
+    width: 5.5rem;
+    height: 5.5rem;
+    border: 2px solid var(--color);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: var(--text);
+    font-size: 3.5rem;
+}
+.theme-sun {
+    display: none;
+}

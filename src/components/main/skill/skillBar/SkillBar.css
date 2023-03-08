@@ -1,0 +1,42 @@
+
+.skillbar {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill__container {
+    width: 90%;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.skill__container-name {
+    font-size: 2rem;
+    color: var(--text);
+    text-transform: uppercase;
+}
+.skill__container-percent {
+    font-size: 2rem;
+    color: var(--text);
+}
+.skill__graph {
+    width: 90%;
+    height: 3rem;
+    background-color: var(--color);
+    border-radius: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+.skill__graph::after {
+    content: "";
+    width: var(--width);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--text);
+}
