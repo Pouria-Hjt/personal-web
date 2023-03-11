@@ -34,7 +34,8 @@
     place-items: center;
     color: var(--text);
     font-size: 3.5rem;
+    z-index: 100;
 }
-.theme-sun {
+/* .theme-sun {
     display: none;
-}
+} */
